@@ -2,73 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name - Personal Website</title>
+    <title>Your Name - PhD Candidate</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="bg-dark text-light py-5">
+        <nav class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Your Name</h1>
-            <p>Web Developer & Designer</p>
+        <div class="container text-center">
+            <h1 class="display-4">Your Name</h1>
+            <p class="lead">PhD Candidate in Computer Science</p>
         </div>
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Write a brief summary about yourself and your professional background.</p>
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">About Me</h2>
+                <p class="lead">Write a brief summary about yourself and your academic background.</p>
+            </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <ul>
-                <li>
-                    <h3>Company Name</h3>
-                    <p>Job Title</p>
-                    <p>Duration of Employment</p>
-                    <p>Description of your role and responsibilities.</p>
-                </li>
-                <!-- Repeat the above li element for each job experience you want to include -->
-            </ul>
+        <section id="publications" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Publications</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h3>Publication Title</h3>
+                        <p class="mb-0">Authors</p>
+                        <p class="mb-0">Publication Venue (e.g., Conference, Journal)</p>
+                        <p>Year</p>
+                    </li>
+                    <!-- Repeat the above li element for each publication you want to include -->
+                </ul>
+            </div>
         </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>University Name</h3>
-                    <p>Degree Program</p>
-                    <p>Graduation Date</p>
-                </li>
-                <!-- Repeat the above li element for each educational achievement you want to include -->
-            </ul>
+        <section id="research" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Research</h2>
+                <p class="lead">Write a brief summary of your research interests and projects.</p>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>Copyright © Your Name</p>
-    </footer>
-</body>
-</html>
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="mb-4">Contact</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary
